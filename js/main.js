@@ -1,4 +1,4 @@
-console. log('Ready!');
+//console. log('Ready!');
 
 function check_info(){
 	var userName = document.getElementById('username').value;
@@ -6,13 +6,14 @@ function check_info(){
 var userEmail = document.getElementById('useremail').value;
 
 var userMessage = document.getElementById("usermessage").value;
-if(userName==" "|| userEmail ==" "||userMessage==" "){
+if(userName == "" && userEmail == ""&& userMessage == ""){
+
 alert("Please fill in all information before submitting ");
 return false;
 }
 //console.log('check_info()');
 //}
 else{
-return true;
+window.location.href = window.location.href + "/contact.html";
 }
 }
