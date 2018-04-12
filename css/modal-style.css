@@ -1,0 +1,98 @@
+ @import url('https://fonts.googleapis.com/css?family=Nunito:400,600');
+
+ body {
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 5px;
+ }
+
+ /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%; /* Could be more or less, depending on screen size */
+    border-radius: 15px;
+    background: rgb(216,117,88);
+    background: linear-gradient(0deg, rgba(216,117,88,1) 0%, rgba(213,81,60,1) 100%);
+
+}
+
+/* The Close Button */
+.close {
+    color: rgb(127, 202, 167);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+.logo {
+    width: 20%;
+    display: block;
+    margin: 20px auto 80px auto;
+}
+
+.email-text, .pass-text, .register-text {
+    margin-bottom: 10px;
+    margin-top: 35px;
+}
+
+p  {
+    color: #fff;
+    text-align: center;
+}
+
+input[type=text]{
+    width: 60%;
+    margin: auto;
+    display: block;
+    border-radius: 60px;
+    background-color: rgb(216, 117, 88);
+    border: 2px solid rgb(127, 202, 167);
+    padding: 10px;
+}
+
+.login-button {
+    width: 40%;
+    border-radius: 60px;
+    background-color: rgb(127, 202, 167);
+    display: block;
+    border-style: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.3em;
+    margin: 15px auto;
+}
+
+.register-button {
+    width: 40%;
+    border-radius: 60px;
+    background-color: rgb(127, 202, 167);
+    display: block;
+    border-style: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.3em;
+    margin: 10px auto;
+}
