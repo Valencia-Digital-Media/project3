@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600');
+
+ body {
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 5px;
+ }
+
+* {margin: 0;}
+h1 {font: 26px/27px ;}
+h2 {font: 24px/25px ;}
+h3 {font: 22px/23px ;}
+p {font: 18px/19px ;}
+a {font: 18px/19px ;}
+
+.full {width:100%;}
+.container {width:1200px; margin:0,auto;}
+.clearFix:after {}
+.relative {position:relative;}
+.space {height:100px;}
+.textL {text-align:left;}
+.textC {text-align:center;}
+.textR {text-align:right;}
+.left {float:left;}
+.right {float:right;}
+
+.orange {background: #A44133;}
+.red {background: #74292A;}
+
+/*======================================
+		button
+======================================*/
+
+.gradBtn {
+	color: #fff;
+	background: linear-gradient(to right, #74292A, #A44133);
+	border: none;
+	border-radius: 4px;
+}
+
+/*======================================
+		Navigation
+======================================*/
+
+#navigation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 52px;
+	background: #fff;
+}
+
+#navigation img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+}
+
+nav {
+ position: absolute;
+ top: 10px;
+ left: 0;
+ width: 100%;
+}
+
+nav ul {
+	list-style: none;
+	margin-left: 100px;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+nav ul li a {
+	color: #000;
+	font-size: 1.5em;
+	text-decoration: none;
+	transition: .3s ease-in-out;
+}
+
+nav ul li a:hover {
+	color: #A44133;
+	text-decoration: none;
+}
+
+.login {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.underline {
+	position: absolute;
+	top: 50px;
+	left: 150px;
+	height: 2px;
+	background: linear-gradient(to right, #74292A, #A44133);
+	width: 120%;
+}
+
+/*======================================
+		Video
+======================================*/
+
+#video {
+	background: rgba(0, 0, 0, 0.3);
+	height: 80vh;
+}
