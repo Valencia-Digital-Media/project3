@@ -50,6 +50,20 @@ box-sizing: border-box;
 
 
 }
+/*---------------footer*/
+.footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #74292A;
+	color: white;
+	text-align: center;
+list-style: none;
+
+}
 
 
-
+li{list-style-type: none;
+	float: left;
+	}
