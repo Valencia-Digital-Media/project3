@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600');
+@import "bungee.css";
+
+body {
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 5px;
+ }
+
 * {margin: 0;}
-h1 {font: 26px/27px ;}
-h2 {font: 24px/25px ;}
-h3 {font: 22px/23px ;}
-p {font: 18px/19px ;}
-a {font: 18px/19px ;}
+h1 {font: 26px/27px 'bungeeregular', sans-serif;}
+h2 {font: 24px/25px 'Nunito';}
+h3 {font: 22px/23px 'Nunito';}
+p {font: 20px/11px 'Nunito' sans-serif;}
+a {font: 20px/11px 'Nunito' sans-serif;}
+b {font: 22px/23px 'bungeeregular', sans-serif;}
 
 .full {width:100%;}
 .container {width:1200px; margin:0,auto;}
-.clearFix:after {}
 .relative {position:relative;}
 .space {height:100px;}
 .textL {text-align:left;}
@@ -19,16 +27,25 @@ a {font: 18px/19px ;}
 .orange {background: #A44133;}
 .red {background: #74292A;}
 
+.clearFix:after {
+        clear: both;
+        content: ".";
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+
 /*======================================
 		button
 ======================================*/
 
-button {
+.gradBtn {
 	color: #fff;
 	background: linear-gradient(to right, #74292A, #A44133);
 	border: none;
 	border-radius: 4px;
 }
+
 
 /*======================================
 		Navigation
@@ -40,6 +57,7 @@ button {
 	left: 0;
 	height: 52px;
 	background: #fff;
+	z-index: 999;
 }
 
 #navigation img {
@@ -63,17 +81,33 @@ nav ul {
 
 nav ul li {
 	display: inline-block;
-	margin-left: 20px;
+	margin-left: 40px;
 }
 
-nav ul li a {
+nav ul li a, .login a {
 	color: #000;
 	font-size: 1.5em;
 	text-decoration: none;
 	transition: .3s ease-in-out;
 }
 
-nav ul li a:hover {
+nav ul li a:hover, .login a:hover {
+	color: #A44133;
+	text-decoration: none;
+}
+
+.login button {
+	color: #000;
+	font-size: 1.5em;
+	text-decoration: none;
+	border: none;
+	background: none;
+	cursor: pointer;
+	margin-left: 40px;
+	transition: .3s ease-in-out;
+}
+
+.login button:hover:hover {
 	color: #A44133;
 	text-decoration: none;
 }
@@ -90,14 +124,132 @@ nav ul li a:hover {
 	left: 150px;
 	height: 2px;
 	background: linear-gradient(to right, #74292A, #A44133);
-	width: 120%;
+	width: 200%;
 }
+
+/*======================================
+		Footer
+======================================*/
+
+footer {
+	background: linear-gradient(to right, #f48571, #f1be8d);
+	height: 150px;
+	text-align: center;
+}
+
+footer h1 {
+	color: #fff;
+	font-size: 3em;
+	padding-top: 50px;
+}
+
+
 
 /*======================================
 		Video
 ======================================*/
 
 #video {
-	background: rgba(0, 0, 0, 0.3);
 	height: 80vh;
 }
+
+video {
+	width: 100%;
+	position: absolute;
+	top: -20vh;
+	left: 0;
+	z-index: -999;
+}
+
+/*======================================
+		Content
+======================================*/
+#content {
+	background: #fff;
+	padding-top: -80vh;
+}
+
+.content {
+	width: 300px;
+	text-align: center;
+	margin-top: 10%;
+}
+
+.content button {
+	margin-top: 20px;
+}
+
+/*======================================
+		Hero
+======================================*/
+#hero {
+	background: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 200px;
+}
+
+.hero {
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	width: 50%;
+	margin-left: -25%;
+	text-align: center;
+}
+
+/*======================================
+		Games
+======================================*/
+	
+#games {
+	background: url(../img/games.jpg) no-repeat right center;
+	background-size: contain;
+	height: 400px;
+	margin-bottom: 10px;
+}
+
+/*======================================
+		Tables
+======================================*/
+
+#tables {
+	background: url(../img/tables.jpg) no-repeat left center;
+	background-size: contain;
+	height: 500px;
+	margin: 10px 0;
+}
+
+
+/*======================================
+		Friends
+======================================*/
+
+#friends {
+	background: url(../img/friends.jpg) no-repeat right center;
+	background-size: contain;
+	height: 550px;
+	margin: 10px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

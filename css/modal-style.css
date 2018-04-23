@@ -21,11 +21,14 @@
 
 /* Modal Content/Box */
 .modal-content {
+    position: absolute;
+    top: 15%;
+    left: 50%;
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin-left: -15%; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 35%; /* Could be more or less, depending on screen size */
+    width: 30%; /* Could be more or less, depending on screen size */
     border-radius: 15px;
     background: rgb(216,117,88);
     background: linear-gradient(0deg, rgba(216,117,88,1) 0%, rgba(213,81,60,1) 100%);
@@ -95,4 +98,9 @@ input[type=text]{
     padding: 10px;
     font-size: 1.3em;
     margin: 10px auto;
+}
+
+/* Prevents the body from scrolling when the Modal is Open */
+body.modal-overflow {
+    overflow: hidden;
 }
