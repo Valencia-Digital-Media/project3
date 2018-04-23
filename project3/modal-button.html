@@ -1,0 +1,42 @@
+ <html>
+ <head>
+ 	<title></title>
+ 	<link rel="stylesheet" type="text/css" href="css/modal-style.css">
+ </head>
+ <body>
+ 
+
+ 	<!-- Trigger/Open The Modal / ONLY CHANGE THE POSTION OF THIS BUTTON -->
+	<div id="modal-register"></div>
+		<button id="myBtn">Login!</button>
+	</div>
+
+
+	<!-- The Modal  -->
+	<div id="myModal" class="modal">
+
+  		<!-- Modal content -->
+  		<div class="modal-content">
+   			<span class="close">&times;</span>
+   			<img src="images/logo.png" class="logo">
+    		<p class="email-text">email</p>
+    		<form>
+    			<input type="text" class="login-email">
+    		
+    			<p class="pass-text">password</p>
+    		
+    			<input type="text" class="login-pass">
+
+    			<button type=button class="login-button" onclick="loginFunction();">LOG IN</button>
+
+    			<p class="register-text">Don't have an account yet?</p>
+    			<button type=button class="register-button" onclick="registerFunction();">SIGN UP</button>
+    		</form>
+  		</div> <!-- closes .modal-content -->
+
+	</div> <!-- closes #myModal -->
+
+	<script src="js/modal-js.js"></script>
+
+ </body>
+ </html>
