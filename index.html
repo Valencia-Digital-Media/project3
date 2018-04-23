@@ -2,24 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Table</title>
+    <title>Tables</title>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/modal-style.css">
 </head>
 <body>
+
+<!-- Navigation -->
 	<div id="navigation" class="full">
 		<div class="container relative">
-			<img src="img/logo.png">
+			<img src="img/logo.svg">
 			<nav>
 				<ul>
 					<li><a href="#games">Games</a></li>
 					<li><a href="#tables">Tables</a></li>
 					<li><a href="#friends">Friends</a></li>
 				</ul>
-				<ul class="login">
-					<li><a href="#">Login</a></li>
-				</ul>
+				<div id="modal-register" class="login">
+					<a href="contact.html">Contact Us</a>
+					<button id="myBtn">Login</button>
+				</div>
 			</nav>
 			<div class="underline"></div>
 		</div>
@@ -27,33 +31,82 @@
 	</div>
 	<div class="space"></div>
 
-	<div id="video" class="full">
-		<div class="container">
-			<p>New<h1>TABLES</h1>app allows you to connect with others who want to play table top games! Inititiate the fun with just one swipe!</p>
-			<button>Register Now!</button>
+<!-- Video / Above the Fold -->
+	<div id="video" class="full relative">
+		<video width="100%" autoplay>
+			<source src="video/boardgame.mp4" type="video/mp4">
+		</video>
+	
+		<div id="hero" class="full relative">
+			<div class="container hero">
+				<p>New <b>TABLES</b> app allows you to connect with others who want to play table top games! Inititiate the fun with just one swipe!</p>
+				<button class="gradBtn">Register Now!</button>
+			</div>
 		</div>
 	</div>
-	<div id="games" class="full">
-		<div class="container">
-			<h2>Take part in hundreds of different games.</h2>
-			<button>Search Games</button>
+
+	<div id="content" class="full">
+		
+
+	<!-- Games Section -->
+		<div id="games" class="full clearFix">
+			<div class="container">
+				<div class="left content">
+					<h2>Take part in <b>hundreds</b> of different games.</h2>
+					<button class="gradBtn">Search Games</button>
+				</div>
+			</div>
 		</div>
-	</div>
-	<div id="tables" class="full">
-		<div class="container">
-			<h2>Set up your very own<br><h1>TABLES</h1><br>experience for you and your friends!</h2>
-			<button>Create Now</button>
+
+	<!-- Tables Section -->
+		<div id="tables" class="full clearFix">
+			<div class="container">
+				<div class="right content">
+					<h2>Set up your very own<br><b>TABLES</b><br>experience for you and your friends!</h2>
+					<button class="gradBtn">Create Now</button>
+				</div>
+			</div>
 		</div>
-	</div>
-	<div id="friends" class="full">
-		<div class="container">
-			<h2>Make lasting friendships</h2>
-			<button>Sign Up</button>
+
+	<!-- Friends Section -->
+		<div id="friends" class="full clearFix">
+			<div class="container">
+				<div class="left content">
+					<h2>Make lasting friendships</h2>
+					<button class="gradBtn">Sign Up</button>
+				</div>
+			</div>
 		</div>
+		<footer class="full">
+			<h1>TABLES</h1>
+		</footer>
 	</div>
-	<footer class="full">
-		<h1>TABLES</h1>
-	</footer>
+
+<!-- Modal Section -->
+	<div id="myModal" class="modal relative">
+
+  		<!-- Modal content -->
+  		<div class="modal-content">
+   			<span class="close">&times;</span>
+   			<img src="img/logo.png" class="logo">
+    		<p class="email-text">email</p>
+    		<form>
+    			<input type="text" class="login-email">
+    		
+    			<p class="pass-text">password</p>
+    		
+    			<input type="text" class="login-pass">
+
+    			<button type=button class="login-button" onclick="loginFunction();">LOG IN</button>
+
+    			<p class="register-text">Don't have an account yet?</p>
+    			<button type="button" class="register-button" onclick="registerFunction();">SIGN UP</button>
+    		</form>
+  		</div> <!-- closes .modal-content -->
+
+	</div> <!-- closes #myModal -->
+
+	<script src="js/modal-js.js"></script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="main.js"></script>
