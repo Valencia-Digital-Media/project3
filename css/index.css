@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,600');
+<<<<<<< HEAD
 @import "bungee.css";
 
 body {
+=======
+
+ body {
+>>>>>>> origin/video
     font-family: 'Nunito', sans-serif;
     letter-spacing: 5px;
  }
@@ -47,6 +52,10 @@ b {font: 22px/23px 'bungeeregular', sans-serif;}
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/video
 /*======================================
 		Navigation
 ======================================*/
@@ -112,6 +121,20 @@ nav ul li a:hover, .login a:hover {
 	text-decoration: none;
 }
 
+.login button {
+	color: #000;
+	font-size: 1.5em;
+	text-decoration: none;
+	border: none;
+	background: none;
+	transition: .3s ease-in-out;
+}
+
+.login button:hover:hover {
+	color: #A44133;
+	text-decoration: none;
+}
+
 .login {
 	position: absolute;
 	top: 0;
@@ -125,6 +148,7 @@ nav ul li a:hover, .login a:hover {
 	height: 2px;
 	background: linear-gradient(to right, #74292A, #A44133);
 	width: 200%;
+<<<<<<< HEAD
 }
 
 /*======================================
@@ -141,6 +165,8 @@ footer h1 {
 	color: #fff;
 	font-size: 3em;
 	padding-top: 50px;
+=======
+>>>>>>> origin/video
 }
 
 
@@ -161,6 +187,7 @@ video {
 	z-index: -999;
 }
 
+<<<<<<< HEAD
 /*======================================
 		Content
 ======================================*/
@@ -178,6 +205,8 @@ video {
 .content button {
 	margin-top: 20px;
 }
+=======
+>>>>>>> origin/video
 
 /*======================================
 		Hero
@@ -187,6 +216,7 @@ video {
 	position: absolute;
 	bottom: 0;
 	left: 0;
+<<<<<<< HEAD
 	height: 200px;
 }
 
@@ -210,21 +240,42 @@ video {
 	margin-bottom: 10px;
 }
 
+=======
+}
+
+
+/*======================================
+		Content
+======================================*/
+#content {
+	background: #fff;
+	padding-top: -80vh;
+}
+
+
+
+
+
+>>>>>>> origin/video
 /*======================================
 		Tables
 ======================================*/
 
+<<<<<<< HEAD
 #tables {
 	background: url(../img/tables.jpg) no-repeat left center;
 	background-size: contain;
 	height: 500px;
 	margin: 10px 0;
 }
+=======
+>>>>>>> origin/video
 
 
 /*======================================
 		Friends
 ======================================*/
+<<<<<<< HEAD
 
 #friends {
 	background: url(../img/friends.jpg) no-repeat right center;
@@ -253,3 +304,5 @@ video {
 
 
 
+=======
+>>>>>>> origin/video
