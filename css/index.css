@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,600');
-<<<<<<< HEAD
 @import "bungee.css";
 
 body {
-=======
-
- body {
->>>>>>> origin/video
     font-family: 'Nunito', sans-serif;
     letter-spacing: 5px;
  }
@@ -15,12 +10,25 @@ body {
 h1 {font: 26px/27px 'bungeeregular', sans-serif;}
 h2 {font: 24px/25px 'Nunito';}
 h3 {font: 22px/23px 'Nunito';}
-p {font: 20px/11px 'Nunito' sans-serif;}
-a {font: 20px/11px 'Nunito' sans-serif;}
+p { font: 20px/21px 'Nunito', sans-serif;}
 b {font: 22px/23px 'bungeeregular', sans-serif;}
 
+a {
+    font: 20px/11px 'Nunito', sans-serif;
+    text-decoration: none;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 .full {width:100%;}
-.container {width:1200px; margin:0,auto;}
+.container {width:1200px; margin: auto;}
 .relative {position:relative;}
 .space {height:100px;}
 .textL {text-align:left;}
@@ -46,16 +54,27 @@ b {font: 22px/23px 'bungeeregular', sans-serif;}
 
 .gradBtn {
 	color: #fff;
+    font-size: .8em;
+    padding: 10px;
 	background: linear-gradient(to right, #74292A, #A44133);
 	border: none;
 	border-radius: 4px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.gradBtn:hover {
+    background: linear-gradient(to right, #A44133, #74292A);
+    color: #fff;
 }
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/video
+
+
 /*======================================
 		Navigation
 ======================================*/
@@ -74,6 +93,8 @@ b {font: 22px/23px 'bungeeregular', sans-serif;}
 	top: 0;
 	left: 0;
 	width: 100px;
+    height: auto;
+    z-index: 9999;
 }
 
 nav {
@@ -116,21 +137,7 @@ nav ul li a:hover, .login a:hover {
 	transition: .3s ease-in-out;
 }
 
-.login button:hover:hover {
-	color: #A44133;
-	text-decoration: none;
-}
-
-.login button {
-	color: #000;
-	font-size: 1.5em;
-	text-decoration: none;
-	border: none;
-	background: none;
-	transition: .3s ease-in-out;
-}
-
-.login button:hover:hover {
+.login button:hover {
 	color: #A44133;
 	text-decoration: none;
 }
@@ -148,7 +155,6 @@ nav ul li a:hover, .login a:hover {
 	height: 2px;
 	background: linear-gradient(to right, #74292A, #A44133);
 	width: 200%;
-<<<<<<< HEAD
 }
 
 /*======================================
@@ -159,14 +165,13 @@ footer {
 	background: linear-gradient(to right, #f48571, #f1be8d);
 	height: 150px;
 	text-align: center;
+    border-top: 5px solid #7fcaa7;
 }
 
 footer h1 {
 	color: #fff;
 	font-size: 3em;
 	padding-top: 50px;
-=======
->>>>>>> origin/video
 }
 
 
@@ -187,7 +192,6 @@ video {
 	z-index: -999;
 }
 
-<<<<<<< HEAD
 /*======================================
 		Content
 ======================================*/
@@ -205,8 +209,6 @@ video {
 .content button {
 	margin-top: 20px;
 }
-=======
->>>>>>> origin/video
 
 /*======================================
 		Hero
@@ -216,7 +218,6 @@ video {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-<<<<<<< HEAD
 	height: 200px;
 }
 
@@ -236,46 +237,26 @@ video {
 #games {
 	background: url(../img/games.jpg) no-repeat right center;
 	background-size: contain;
-	height: 400px;
+	height: 300px;
 	margin-bottom: 10px;
+
 }
 
-=======
-}
-
-
-/*======================================
-		Content
-======================================*/
-#content {
-	background: #fff;
-	padding-top: -80vh;
-}
-
-
-
-
-
->>>>>>> origin/video
 /*======================================
 		Tables
 ======================================*/
 
-<<<<<<< HEAD
 #tables {
 	background: url(../img/tables.jpg) no-repeat left center;
 	background-size: contain;
 	height: 500px;
 	margin: 10px 0;
 }
-=======
->>>>>>> origin/video
 
 
 /*======================================
 		Friends
 ======================================*/
-<<<<<<< HEAD
 
 #friends {
 	background: url(../img/friends.jpg) no-repeat right center;
@@ -285,6 +266,153 @@ video {
 }
 
 
+/*======================================
+		Categories Page
+======================================*/
+.headline h1 {
+    color: #A44133;
+    text-align: center;
+    margin: 60px 0;
+    font-size: 10em;
+}
+
+/*======================================
+		Sort Bar
+======================================*/
+.sort {
+    width: 50%;
+    float: left;
+    height: 40px;
+    margin: 20px 0 0;
+}
+
+.sort select {
+    width: 25%;
+    margin: 0 10px;
+    padding-left: 10px;
+    float: left;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background:none;
+    border: 1px solid #888888;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+.sort label {
+    float: left;
+    width: 10%;
+    height: 26px;
+    margin-left: -10px;
+    border: none;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0;
+    background:  linear-gradient(to right, #74292A, #A44133);
+}
+
+.searchbar {
+    width: 50%;
+    float: right;
+    height: 50px;
+    padding: 10px 0;
+}
+
+.searchbar .search {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background: none;
+    border: 1px solid #888888;
+    width: 100%;
+    height: 30px;
+    margin-right: 0;
+}
+
+.searchbar button {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 20%;
+    height: 30px;
+    color: #fff;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background: linear-gradient(to right, #74292A, #A44133);
+}
+
+.underline2 {
+    height: 2px;
+    background: linear-gradient(to right, #74292A, #A44133);
+    width: 100%;
+    margin: 20px 0 50px;
+}
+
+/*======================================
+		Games
+======================================*/
+
+#magicGathering {
+	background: url(../img/magic.png) no-repeat center;
+	background-size: contain;
+	height: 200px;
+}
+
+#dungeonDragons {
+	background: url(../img/dungeons.png) no-repeat center;
+	background-size: contain;
+	height: 200px;
+}
+
+#catan {
+	background: url(../img/catan.png) no-repeat center;
+	background-size: contain;
+	height: 200px;
+}
+
+.game {
+    height: 300px;
+    margin: 10px;
+}
+
+.game:nth-child(even) {
+	background: rgba(165, 68, 68, 0.3);
+}
+
+.gameImage {
+    float: left;
+    width: 40%;
+}
+
+.description {
+    float: right;
+    width: 55%;
+    margin: 15px 0 0 5%;
+}
+
+.description p {
+    color: #2d2d2d;
+}
+
+.game a {
+    position: absolute;
+    bottom: -280px;
+    right: 20px;;
+}
+
+
+/*======================================
+		More
+======================================*/
+.more {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.more a {
+    color: #A44133;
+}
 
 
 
@@ -304,5 +432,20 @@ video {
 
 
 
-=======
->>>>>>> origin/video
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
