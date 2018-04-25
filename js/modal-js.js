@@ -14,6 +14,7 @@ var body = document.querySelector("body");
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
+    console.log("hello")
     modal.style.display = "block";
     // Prevents the background from Scrolling
     body.className += ' modal-overflow';

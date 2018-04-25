@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title> contact Page </title>
+	<title> Contact Page </title>
 	<meta charset='utf-8'>
 	 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 	<link rel='stylesheet' href='css/normalize.css'>
 	<link rel='stylesheet' href='css/style.css'>
-	<link rel='stylesheet' href='css/beth.css'>
+	
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	  <link rel="stylesheet" href="css/index.css">
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	    <link rel='stylesheet' href='css/beth.css'>
 </head>
 <body>
 <div class='main'>
@@ -27,6 +28,27 @@
 </nav>
 
 </div>
+<!-- Modal Section -->
+	<div id="myModal" class="modal relative">
+
+  		<!-- Modal content -->
+  		<div class="modal-content">
+   			<span class="close">&times;</span>
+   			<img src="img/logo.png" class="logo">
+    		<p class="email-text">email</p>
+    		<form>
+    			<input type="text" class="login-email">
+    		
+    			<p class="pass-text">password</p>
+    		
+    			<input type="text" class="login-pass">
+
+    			<button type=button class="login-button" onclick="loginFunction();">LOG IN</button>
+
+    			<p class="register-text">Don't have an account yet?</p>
+    			<button type="button" class="register-button" onclick="registerFunction();">SIGN UP</button>
+    		</form>
+  		</div> <!-- closes .modal-content -->
 <script src='js/main.js'></script>
 </body>
 </html>
