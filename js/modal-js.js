@@ -1,5 +1,3 @@
-
-
 // Get the modal
 var modal = document.getElementById('myModal');
 
@@ -35,7 +33,6 @@ window.onclick = function(event) {
         body.className -= ' modal-overflow';
     }
 } 
-
 
 document.querySelector(".register-page").style.visibility = "hidden";
 
