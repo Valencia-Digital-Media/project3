@@ -34,3 +34,21 @@ window.onclick = function(event) {
         body.className -= ' modal-overflow';
     }
 } 
+
+
+document.querySelector(".register-page").style.visibility = "hidden";
+
+function registerFunction() {
+    document.querySelector(".login-page").style.visibility = "hidden";
+    document.querySelector(".register-page").style.visibility = "visible";
+}
+
+function registerThanks () {
+    alert("Account created! Thanks for registering.");
+        modal.style.display = "none";
+         // Removes Overflow class
+        body.className -= ' modal-overflow';
+        document.querySelector(".register-page").style.visibility = "hidden";
+        document.querySelector(".login-page").style.visibility = "visible";
+    
+}
