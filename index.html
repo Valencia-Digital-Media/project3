@@ -11,25 +11,28 @@
 <body>
 
 <!-- Navigation -->
-	<div id="navigation" class="full">
+	<nav>
 		<div class="container relative">
-			<img src="img/logo.svg">
-			<nav>
-				<ul>
-					<li><a href="#games">Games</a></li>
-					<li><a href="#tables">Tables</a></li>
-					<li><a href="#friends">Friends</a></li>
-				</ul>
-				<div id="modal-register" class="login">
-					<a href="contact.html">Contact Us</a>
-					<button id="myBtn">Login</button>
+	    	<div class="row">
+				<div class="col-sm-2">
+					<img src="img/logo.svg">
 				</div>
-			</nav>
-			<div class="underline"></div>
+				<div class="col-sm-6">
+					<ul style="-webkit-padding-start: 0px; margin: 0; padding: 10px 5px;">
+						<li class=""><a href="#games">Games</a></li>
+						<li><a href="#tables">Tables</a></li>
+						<li><a href="#friends">Friends</a></li>
+					</ul>
+				</div>
+	    		<div class="col-sm-4 pull-right">
+					<div id="modal-register" class="login">
+						<a href="contact.html">Contact Us</a>
+						<button id="myBtn">Login</button>
+					</div>
+				</div>
+			</div>
 		</div>
-
-	</div>
-	<div class="space"></div>
+	</nav>
 
 <!-- Video / Above the Fold -->
 	<div id="video" class="full relative">
@@ -88,50 +91,22 @@
 
   		<!-- Modal content -->
   		<div class="modal-content">
-  			
-   				<span class="close">&times;</span>
-   				<img src="img/logo.png" class="logo">
-
-   				<div class="login-page">
-    			<p class="email-text">email</p>
-    			<form>
-    				<input type="text" class="login-email">
+   			<span class="close">&times;</span>
+   			<img src="img/logo.png" class="logo">
+    		<p class="email-text">email</p>
+    		<form>
+    			<input type="text" class="login-email">
     		
-    				<p class="pass-text">password</p>
+    			<p class="pass-text">password</p>
     		
-    				<input type="text" class="login-pass">
+    			<input type="text" class="login-pass">
 
-    				<button type=button class="login-button" onclick="loginFunction();">LOG IN</button>
+    			<button type=button class="login-button" onclick="loginFunction();">LOG IN</button>
 
-    				<p class="register-text">Don't have an account yet?</p>
-    				<button type="button" class="register-button" onclick="registerFunction();">SIGN UP</button>
-    			</form>
-    			</div>
-
-    			<div class="register-page">
-    			<p class="email-text">email</p>
-    			<form>
-    				<input type="text" class="register-email">
-    				
-    				<p class="username-text">pick a username</p>
-
-    				<input type="text" class="register-username">
-
-    				<p class="pass-text">password</p>
-    		
-    				<input type="text" class="register-pass">
-
-    				<p class="pass-text">confirm password</p>
-
-    				<input type="text" class="register-pass">
-
-    				<button type="button" class="register-button" onclick="registerThanks();">REGISTER</button>
-    			</form>
-    			</div>
-
+    			<p class="register-text">Don't have an account yet?</p>
+    			<button type="button" class="register-button" onclick="registerFunction();">SIGN UP</button>
+    		</form>
   		</div> <!-- closes .modal-content -->
-
-
 
 	</div> <!-- closes #myModal -->
 
