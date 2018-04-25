@@ -6,12 +6,12 @@
 	 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 	<link rel='stylesheet' href='css/normalize.css'>
 	<link rel='stylesheet' href='css/style.css'>
-	<link rel='stylesheet' href='css/beth.css'>
+	
 
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	  <link rel="stylesheet" href="css/index.css">
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-
+<link rel='stylesheet' href='css/beth.css'>
 </head>
 <body>
 	<!-- Navigation -->
@@ -28,7 +28,7 @@
 				<div id="modal-register" class="login">
 					<a href="contact.html">Contact Us</a>
 					
-					<button id="myBtn"><a href="login.html">Login</a></button>
+					<button id="myBtn">login</button>
 				</div>
 			</nav>
 	<div class="underline"></div>
@@ -74,8 +74,30 @@
 
 
 </div>
-<script src='js/main.js'></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- Modal Section -->
+	<div id="myModal" class="modal relative">
+
+  		<!-- Modal content -->
+  		<div class="modal-content">
+   			<span class="close">&times;</span>
+   			<img src="img/logo.png" class="logo">
+    		<p class="email-text">email</p>
+    		<form>
+    			<input type="text" class="login-email">
+    		
+    			<p class="pass-text">password</p>
+    		
+    			<input type="text" class="login-pass">
+
+    			<button type=button class="login-button" onclick="loginFunction();">LOG IN</button>
+
+    			<p class="register-text">Don't have an account yet?</p>
+    			<button type="button" class="register-button" onclick="registerFunction();">SIGN UP</button>
+    		</form>
+  		</div> <!-- closes .modal-content -->
+<script src="js/modal-js.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="main.js"></script>
 </body>
 </html>
