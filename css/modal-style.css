@@ -32,7 +32,6 @@
     border-radius: 15px;
     background: rgb(216,117,88);
     background: linear-gradient(0deg, rgba(216,117,88,1) 0%, rgba(213,81,60,1) 100%);
-
 }
 
 .register-page {
@@ -41,8 +40,6 @@
     left: 0%;
     padding: 20px;
     width: 100%; /* Could be more or less, depending on screen size */
-  
-
 }
 
 /* The Close Button */
