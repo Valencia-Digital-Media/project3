@@ -48,5 +48,7 @@ function registerThanks () {
         modal.style.display = "none";
          // Removes Overflow class
         body.className -= ' modal-overflow';
+        document.querySelector(".register-page").style.visibility = "hidden";
+        document.querySelector(".login-page").style.visibility = "visible";
     
 }
